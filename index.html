@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>1. Rock</h1>
+    <h1>2. Paper</h1>
+    <h1>3. Scissor</h1>
+    <label for="">Player1</label>
+    <input type="text" id="in">
+    <label for="">Player2</label>
+    <input type="text" id="out">
+    <input type="button" onclick="tab()" value="PLAY">
+    <h1 id="ss"></h1>
+    <script>
+        function tab(){
+            var x = parseInt(document.getElementById("in").value)
+            var y = parseInt(document.getElementById("out").value)
+            if( x == 1 && y == 2){
+                document.getElementById("ss").innerHTML = "Player 1 win"
+            }
+            else if( x == 1 && y == 3){
+                document.getElementById("ss").innerHTML = "Player 1 win"
+            }
+            else if( x == 2 && y == 3){
+                document.getElementById("ss").innerHTML = "Player 2 win"
+            }
+            else if( x == 2 && y == 1){
+                document.getElementById("ss").innerHTML = "Player 2 win"
+            }
+            else if( x == 3 && y == 1){
+                document.getElementById("ss").innerHTML = "Player 2 win"
+            }
+            else if( x == 3 && y == 2){
+                document.getElementById("ss").innerHTML = "Player 1 win"
+            }
+            else if( x == 1 && y == 1){
+                document.getElementById("ss").innerHTML = "DRAW"
+            }
+            else if( x == 2 && y == 2){
+                document.getElementById("ss").innerHTML = "DRAW"
+            }
+            else if( x == 3 && y == 3){
+                document.getElementById("ss").innerHTML = "DRAW"
+            }
+            else{
+                document.getElementById("ss").innerHTML = "Invalid input"
+            }
+        }
+    </script>
+</body>
+</html>
